@@ -11,29 +11,35 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Make your app responsive by implementing breakpoints based on Boostrap 4.0+.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+1. Get the screen width from BuildContext.
+2. Get the current breakpoint.
+3. Get the max width based on the current breakpoint. Max width can be modified by the user.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. To use this plugin, add `bootstrap_breakpoints` as a dependency in your pubspec.yaml file.
+
+```yaml
+  dependencies:
+    bootstrap_breakpoints:
+```
+
+or run:
+
+```bash
+flutter pub add bootstrap_breakpoints
+```
+
+2. Now in your Dart code, you can use:
+
+```dart
+import 'package:bootstrap_breakpoints/bootstrap_breakpoints.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+See `/example` folder.
